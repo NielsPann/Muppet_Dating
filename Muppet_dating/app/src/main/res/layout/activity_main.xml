@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:gravity="center|top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/dating_text1"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/headerText"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="15dp"/>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:columnCount="2"
+            android:rowCount="9">
+
+            <ImageView
+                android:src="@drawable/beakerpreview"
+                android:layout_width="wrap_content"
+                android:id="@+id/BeakerImg"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:onClick="BeakerOnClick"/>
+
+
+            <ImageView
+                android:src="@drawable/gonzopreview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/GonzoImg"
+                android:onClick="GonzoOnClick"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                style="?android:attr/ratingBarStyleSmall"
+                android:id="@+id/ratingBarBeaker" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                style="?android:attr/ratingBarStyleSmall"
+                android:id="@+id/ratingBarGonzo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/Beaker"
+                android:id="@+id/Beaker_text"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/Gonzo"
+                android:id="@+id/Gonzo_text"
+                android:layout_below="@+id/textViewGonzo"
+                android:gravity="center"/>
+
+            <ImageView
+                android:src="@drawable/kermitpreview"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/KermitImg"
+                android:layout_height="wrap_content"
+                android:onClick="KermitOnClick"/>
+
+            <ImageView
+                android:src="@drawable/pepepreview"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/PepeImg"
+                android:layout_height="wrap_content"
+                android:onClick="PepeOnClick"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                style="?android:attr/ratingBarStyleSmall"
+                android:id="@+id/ratingBarKermit" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                style="?android:attr/ratingBarStyleSmall"
+                android:id="@+id/ratingBarPepe" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/Kermittxt"
+                android:id="@+id/Gonzo_text"
+                android:layout_below="@+id/textViewKermit"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/Pepetxt"
+                android:id="@+id/Gonzo_text"
+                android:layout_below="@+id/textViewPepe"
+                android:gravity="center"/>
+
+            <ImageView
+                android:src="@drawable/markpreview"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/MarkImg"
+                android:layout_height="wrap_content"
+                android:onClick="MarkOnClick"/>
+
+            <ImageView
+                android:src="@drawable/piggypreview"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/PiggyImg"
+                android:layout_height="wrap_content"
+                android:onClick="PiggyOnClick"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                style="?android:attr/ratingBarStyleSmall"
+                android:id="@+id/ratingBarMark" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                style="?android:attr/ratingBarStyleSmall"
+                android:id="@+id/ratingBarPiggy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/Marktxt"
+                android:id="@+id/Gonzo_text"
+                android:layout_below="@+id/textViewMark"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/Piggytxt"
+                android:id="@+id/Gonzo_text"
+                android:layout_below="@+id/textViewPiggy"
+                android:gravity="center"/>
+
+        </GridLayout>
+
+    </LinearLayout>
+</ScrollView>

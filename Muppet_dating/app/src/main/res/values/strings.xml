@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Muppet dating</string>
+    <string name="dating_text1">Muppet dating!</string>
+    <string name="Gonzo">Gonzo</string>
+    <string name="Beaker">Beaker</string>
+    <string name="Kermittxt">Kermit</string>
+    <string name="Pepetxt">Pepe</string>
+    <string name="Marktxt">Mark Rutte</string>
+    <string name="Piggytxt">Miss Piggy</string>
+    <string name="headerText">Choose on of the muppets that you\'re interrested in!</string>
+</resources>
